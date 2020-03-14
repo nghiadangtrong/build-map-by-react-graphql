@@ -3,7 +3,7 @@ import { GraphQLClient } from 'graphql-request';
 
 export const BASE_URL = 
     process.env.NODE_ENV === 'production' 
-        ? window.config.BASE_URL
+        ? "https://noanpins.herokuapp.com/"
         : "http://localhost:4000/graphql"
 
 export const useClient = () => {

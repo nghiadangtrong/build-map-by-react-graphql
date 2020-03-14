@@ -19,7 +19,8 @@ import './config'
 
 const wsLink = new WebSocketLink({
   // uri: 'ws://localhost:4000/graphql',
-  uri: window.config.URI_SOCKET,
+  // uri: window.config.URI_SOCKET,
+  uri: 'wss://noanpins.herokuapp.com/graphql',
   options: {
     reconnect: true
   }
