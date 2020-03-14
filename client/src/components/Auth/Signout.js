@@ -6,7 +6,10 @@ import Typography from "@material-ui/core/Typography";
 
 import Context from '../../context';
 
+import { unstable_useMediaQuery as useMediaQuery } from "@material-ui/core/useMediaQuery"
+
 const Signout = ({ classes }) => {
+  const mobileSize = useMediaQuery('(max-width: 650x)')
   const {dispatch} = useContext(Context)
   const onSignout = () => {
     dispatch({type: "SIGNOUT_USER"});
@@ -20,6 +23,7 @@ const Signout = ({ classes }) => {
           <Typography
             variant="body1"
             className={classes.buttonText}
+            style={{display: mobileSize ? 'none': 'block'}}
           >
             Signout
           </Typography>
