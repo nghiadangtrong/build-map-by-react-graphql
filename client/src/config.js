@@ -1,4 +1,4 @@
 window.config  = {
-    URI_SOCKET: 'ws://localhost:4000/graphql',
-    BASE_URL: 'http://localhost:4000/graphql'
+    URI_SOCKET: 'wss://noanpins.herokuapp.com/',
+    BASE_URL: 'https://noanpins.herokuapp.com/'
 }
